@@ -30,7 +30,7 @@ export default {
         async addPost(data) {
             try {
                 await PostService.create(data);
-                    this.message = "Liên hệ được thêm thành công.";
+                    this.$router.push({ name: "postbook" });
                 } catch (error) {
                     console.log(error);
             }

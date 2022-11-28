@@ -47,7 +47,7 @@ export default {
         async updatePost(data) {
             try {
                 await PostService.update(this.post._id, data);
-                    this.message = "Truyện được cập nhật thành công.";
+                    this.$router.push({ name: "postbook" });
                 } catch (error) {
                     console.log(error);
             }

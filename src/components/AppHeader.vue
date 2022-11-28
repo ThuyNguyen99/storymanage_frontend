@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <nav class="navbar navbar-expand navbar-dark" style="background: #005c6b;">
         <a href="/" class="navbar-brand">Ứng dụng Quản lý Truyện và Người dùng</a>
         <div class="ml-auto navbar-nav">
             <li class="nav-item">

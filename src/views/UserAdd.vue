@@ -30,7 +30,7 @@ export default {
         async addUser(data) {
             try {
                 await UserService.create(data);
-                    this.message = "Người dùng được thêm thành công.";
+                    this.$router.push({ name: "userbook" });
                 } catch (error) {
                     console.log(error);
             }

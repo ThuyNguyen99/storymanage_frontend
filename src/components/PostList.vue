@@ -42,7 +42,7 @@ export default {
                 {{ post.author }}</p>
             <p class="card-text">
                 <strong>
-                    <i v-if="post.favorite" class="fa-regular fa-circle-check"></i>
+                    <i v-if="post.completed" class="fa-regular fa-circle-check"></i>
                     <i v-else class="fa-regular fa-circle-xmark"></i>
                      Hoàn thành&nbsp;</strong>
                 

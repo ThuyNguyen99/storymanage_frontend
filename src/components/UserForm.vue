@@ -46,12 +46,12 @@
 
         <div class="form-group form-check">
             <input
-                name="favorite"
+                name="access"
                 type="checkbox"
                 class="form-check-input"
-                v-model="userLocal.favorite"
+                v-model="userLocal.access"
             />
-            <label for="favorite" class="form-check-label">
+            <label for="access" class="form-check-label">
                 <strong>Yêu thích</strong>
             </label>
         </div>

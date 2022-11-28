@@ -47,7 +47,7 @@ export default {
         async updateUser(data) {
             try {
                 await UserService.update(this.user._id, data);
-                    this.message = "Liên hệ được cập nhật thành công.";
+                    this.$router.push({ name: "userbook" });
                 } catch (error) {
                     console.log(error);
             }

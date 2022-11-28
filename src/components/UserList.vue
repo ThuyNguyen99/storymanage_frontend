@@ -14,7 +14,7 @@ export default {
 </script>
 <template>
     <table class="table">
-        <thead class="thead-dark">
+        <thead class="text-white" style="background: #0b595b">
             <tr>
             <th scope="col">Tên</th>
             <th scope="col">Email</th>
@@ -33,7 +33,7 @@ export default {
                 @click="updateActiveIndex(index)"
             
             >
-                <td>
+                <td style="color: darkcyan;">
                     {{ user.name }}
                 </td>
                 <td>
@@ -46,7 +46,7 @@ export default {
                     {{ user.phone }}
                 </td>
                 <td class="text-center">
-                    <router-link v-if="user.favorite" :to="{ name: 'postbook' }" data-toggle="tooltip" data-placement="right" title="Chuyển đến trang post">
+                    <router-link v-if="user.access" :to="{ name: 'postbook' }" data-toggle="tooltip" data-placement="right" title="Chuyển đến trang post">
                         <i class="fa-solid fa-circle-check"></i>
                     </router-link>
                     <i v-else class="fa-regular fa-circle-xmark"></i>

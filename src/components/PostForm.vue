@@ -48,12 +48,12 @@
 
         <div class="form-group form-check">
             <input
-                name="favorite"
+                name="completed"
                 type="checkbox"
                 class="form-check-input"
-                v-model="postLocal.favorite"
+                v-model="postLocal.completed"
             />
-            <label for="favorite" class="form-check-label">
+            <label for="completed" class="form-check-label">
                 <strong>Hoàn thành</strong>
             </label>
         </div>
@@ -100,7 +100,7 @@ export default {
             des: yup
                 .string()
                 .required("Nội dung.")
-                .max(500, "Địa chỉ tối đa 100 ký tự."),
+                .max(1000, "Nội dung tối đa 1000 ký tự."),
             image: yup
                 .image
         });
